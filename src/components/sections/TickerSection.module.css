@@ -1,0 +1,38 @@
+/* src/components/sections/TickerSection.module.css */
+.wrap {
+  background: var(--royal-crimson);
+  padding: 11px 0;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.label {
+  background: rgba(0,0,0,0.25);
+  color: var(--royal-gold);
+  font-size: 11px; font-weight: 600;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  padding: 3px 14px;
+  border-radius: 4px;
+  white-space: nowrap;
+  position: absolute; left: 16px; z-index: 2;
+}
+.track { overflow: hidden; flex: 1; padding-left: 80px; }
+.inner {
+  display: flex;
+  animation: ticker 35s linear infinite;
+  width: max-content;
+}
+.inner:hover { animation-play-state: paused; }
+.item {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 0 36px;
+  font-size: 13px; color: rgba(255,255,255,0.85);
+  white-space: nowrap;
+}
+.dot { width: 4px; height: 4px; border-radius: 50%; background: var(--royal-gold); flex-shrink: 0; }
+@keyframes ticker {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}

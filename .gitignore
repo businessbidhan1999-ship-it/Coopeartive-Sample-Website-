@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+
+# Next.js build
+.next/
+out/
+
+# Environment (contains secrets)
+.env.local
+.env.*.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# TypeScript build info
+tsconfig.tsbuildinfo
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Uploaded files (user content, not source)
+public/uploads/*
+!public/uploads/.gitkeep
+
+# Submission data (runtime data, not source)
+data/submissions/*.json
+!data/submissions/.gitkeep

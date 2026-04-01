@@ -1,0 +1,24 @@
+{
+  "chairman": {
+    "name": "Sitaram Kaphle",
+    "title": "Chairman",
+    "message": "Respected Members and Well-Wishers,\n\nGreetings from Royal Multipurpose Cooperative Society Limited (RMCL), Nepal. Welcome to our website, where you can access comprehensive information about our cooperative and the diverse range of services we offer.\n\nRMCL, a specialized cooperative, extends a full spectrum of financial services to its members and the community. From digital cooperative banking, microfinance, insurance, to promoting agro-business, cooperative education, and training, we are dedicated to delivering sustainable and high-quality services. Our goal is to be the preferred cooperative for comprehensive financial and non-financial solutions.\n\nCatering to a diverse demographic, RMCL serves individuals across all age groups and economic backgrounds, offering specialized products tailored to their needs. To effectively provide a complete range of financial services under one roof, we have established various departments and wings, guided by our expert management and staff.\n\nRMCL places a strong emphasis on corporate social responsibility, member welfare, and protection issues. Our commitment to socially responsible business aims for a positive impact on society by considering the interests of all stakeholders, including members, employees, investors, and the broader community.\n\nI extend sincere thanks and gratitude to the Government of Nepal and the Department of Cooperative; our regulatory body, members, well-wishers, board of directors, stakeholders, staff of RMCL, and other relevant institutions. Your unwavering support has been instrumental in establishing us as a recognized cooperative in Nepal.\n\nIn conclusion, I assure you that RMCL will persist in delivering qualitative and member-friendly services for the betterment of our society.\n\nThank you.",
+    "imageUrl": ""
+  },
+  "boardOfDirectors": [
+    { "id": "1", "name": "Sitaram Kaphle", "role": "Chairman", "imageUrl": "" },
+    { "id": "2", "name": "Surendra Raj Khatri", "role": "Vice Chairperson", "imageUrl": "" },
+    { "id": "3", "name": "Krishna Prasad Wosti", "role": "Secretary", "imageUrl": "" },
+    { "id": "4", "name": "Nisha Thapa Basnet", "role": "Treasurer", "imageUrl": "" },
+    { "id": "5", "name": "Krishna Prasad Dhakal", "role": "Director", "imageUrl": "" },
+    { "id": "6", "name": "Punam Lamsal", "role": "Director", "imageUrl": "" },
+    { "id": "7", "name": "Suman Raj Lamsal", "role": "Director", "imageUrl": "" }
+  ],
+  "topManagement": [
+    { "id": "1", "name": "Shiva Hari Koirala", "role": "Branch In-Charge, Main Branch – Banking", "imageUrl": "" },
+    { "id": "2", "name": "Ramesh Neupane", "role": "Branch In-Charge, Main Branch – Microfinance", "imageUrl": "" },
+    { "id": "3", "name": "Devendra Chapagain", "role": "Branch In-Charge, Pharping Service Center", "imageUrl": "" },
+    { "id": "4", "name": "Keshab Khatiwoda", "role": "Agriculture Business Officer, Tokha Resource Center", "imageUrl": "" },
+    { "id": "5", "name": "Khemraj Thakulla", "role": "JT – Agriculture, Pharping Resource Center", "imageUrl": "" }
+  ]
+}

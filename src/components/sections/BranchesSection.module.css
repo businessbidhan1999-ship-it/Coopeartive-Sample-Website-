@@ -1,0 +1,124 @@
+/* src/components/sections/BranchesSection.module.css */
+.section {
+  background: var(--royal-deep);
+  border-top: 1px solid var(--royal-border);
+  padding: 100px 0;
+}
+.header {
+  display: flex; align-items: flex-end; justify-content: space-between;
+  gap: 24px; margin-bottom: 52px; flex-wrap: wrap;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Card */
+.card {
+  background: rgba(255,255,255,0.025);
+  border: 1px solid rgba(201,168,76,0.15);
+  border-radius: 14px;
+  padding: 26px;
+  position: relative; overflow: hidden;
+  transition: transform 0.35s var(--ease-out), box-shadow 0.35s var(--ease-out), border-color 0.35s;
+}
+
+/* Gold shimmer sweep on hover */
+.card::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(
+    115deg,
+    transparent 20%,
+    rgba(201,168,76,0.05) 40%,
+    rgba(201,168,76,0.1) 50%,
+    rgba(201,168,76,0.05) 60%,
+    transparent 80%
+  );
+  transform: translateX(-100%);
+  transition: transform 0.65s var(--ease-out);
+}
+
+/* Gold top-edge accent */
+.card::after {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, var(--royal-crimson), var(--royal-gold));
+  opacity: 0;
+  transition: opacity 0.35s;
+}
+
+.card:hover {
+  border-color: rgba(201,168,76,0.35);
+  transform: translateY(-5px);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4), 0 0 0 1px rgba(201,168,76,0.1);
+}
+.card:hover::before { transform: translateX(100%); }
+.card:hover::after { opacity: 1; }
+
+/* HQ card */
+.hq {
+  border-color: rgba(139,26,26,0.3);
+  background: rgba(139,26,26,0.04);
+}
+.hq:hover { border-color: rgba(139,26,26,0.5); box-shadow: 0 20px 60px rgba(139,26,26,0.2), 0 0 0 1px rgba(139,26,26,0.1); }
+.hq::after { background: linear-gradient(90deg, #8B1A1A, var(--royal-gold)); }
+
+.cardTop {
+  display: flex; justify-content: space-between; align-items: flex-start;
+  margin-bottom: 16px;
+}
+.typeRow { display: flex; align-items: center; gap: 8px; }
+.type {
+  font-size: 10px; font-weight: 600; letter-spacing: 0.1em;
+  text-transform: uppercase; color: rgba(250,246,238,0.35);
+}
+.hqBadge {
+  background: var(--royal-crimson); color: white;
+  font-size: 9px; font-weight: 700; letter-spacing: 0.08em;
+  padding: 2px 8px; border-radius: 4px;
+}
+.icon {
+  font-size: 22px;
+  transition: transform 0.3s var(--ease-out);
+}
+.card:hover .icon { transform: scale(1.15) rotate(-5deg); }
+
+.name {
+  font-family: var(--font-display); font-size: 16px; font-weight: 600;
+  color: var(--royal-cream); margin-bottom: 10px; line-height: 1.3;
+}
+.inCharge {
+  font-size: 12px; color: rgba(250,246,238,0.4);
+  margin-bottom: 8px;
+}
+.address {
+  font-size: 12.5px; color: rgba(250,246,238,0.55);
+  margin-bottom: 12px; line-height: 1.5;
+}
+.phone {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 12.5px; color: var(--royal-gold);
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(201,168,76,0.15);
+  background: rgba(201,168,76,0.05);
+  transition: color 0.2s, background 0.2s, border-color 0.2s, transform 0.2s;
+}
+.phone:hover {
+  color: var(--royal-gold-light);
+  background: rgba(201,168,76,0.1);
+  border-color: rgba(201,168,76,0.3);
+  transform: translateX(2px);
+}
+
+@media (max-width: 768px) {
+  .section { padding: 70px 0; }
+  .header { flex-direction: column; align-items: flex-start; }
+  .grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 480px) {
+  .grid { grid-template-columns: 1fr; gap: 14px; }
+}

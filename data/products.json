@@ -1,0 +1,375 @@
+[
+  {
+    "id": "agriculture-loan",
+    "slug": "agriculture-loan",
+    "name": "Agriculture Loan",
+    "emoji": "🌾",
+    "category": "loan",
+    "rate": "12% p.a. onwards",
+    "rateValue": 12,
+    "description": "Designed for farmers, agro-businesses and cooperatives to finance crop production, irrigation systems, agricultural equipment, livestock, and land development.",
+    "features": [
+      "Loan amount up to NPR 50 Lakhs",
+      "Flexible repayment aligned with harvest cycles",
+      "Collateral: Land, livestock, or crop produce",
+      "Grace period available for seasonal farmers",
+      "Government subsidy loans facilitated"
+    ],
+    "requirements": [
+      "Citizenship Certificate copy",
+      "Land ownership certificate",
+      "Recent passport size photos (2)",
+      "Account statement (last 6 months)",
+      "Project/farm plan for larger amounts"
+    ],
+    "facilities": ["Any Branch Banking Service (ABBS)", "SMS Alerts", "Flexible EMI", "Top-up facility"]
+  },
+  {
+    "id": "business-loan",
+    "slug": "business-loan",
+    "name": "Business Loan",
+    "emoji": "🏢",
+    "category": "loan",
+    "rate": "13% p.a. onwards",
+    "rateValue": 13,
+    "description": "Fuel the growth of your enterprise. RMCL's Business Loan covers working capital needs, equipment purchases, shop/office setup, and business expansion for SMEs and entrepreneurs.",
+    "features": [
+      "Loan amount up to NPR 1 Crore",
+      "Repayment period up to 7 years",
+      "Working capital and term loan options",
+      "Collateral: Property or business assets",
+      "Competitive processing fees"
+    ],
+    "requirements": [
+      "Business registration certificate",
+      "PAN/VAT certificate",
+      "Citizenship Certificate",
+      "Business plan / projected cash flow",
+      "Bank/cooperative account statement (1 year)",
+      "2 passport size photos"
+    ],
+    "facilities": ["ABBS", "Mobile Banking", "SMS Alerts", "Overdraft facility"]
+  },
+  {
+    "id": "education-loan",
+    "slug": "education-loan",
+    "name": "Education Loan",
+    "emoji": "🎓",
+    "category": "loan",
+    "rate": "11% p.a. onwards",
+    "rateValue": 11,
+    "description": "Invest in your future. RMCL's Education Loan covers tuition fees, hostel charges, books, and all educational expenses for studies in Nepal or abroad.",
+    "features": [
+      "Loan amount up to NPR 30 Lakhs",
+      "Moratorium period during study",
+      "Repayment starts 6 months after course completion",
+      "No collateral for loans under NPR 5 Lakhs",
+      "Covers domestic and international education"
+    ],
+    "requirements": [
+      "Admission letter from institution",
+      "Citizenship Certificate (student & guardian)",
+      "Academic records (mark sheets)",
+      "Fee structure from institution",
+      "Guarantor details",
+      "2 passport size photos"
+    ],
+    "facilities": ["ABBS", "Mobile Banking", "Flexible repayment", "Top-up on course extension"]
+  },
+  {
+    "id": "housing-loan",
+    "slug": "housing-loan",
+    "name": "Housing Loan",
+    "emoji": "🏠",
+    "category": "loan",
+    "rate": "12.5% p.a. onwards",
+    "rateValue": 12.5,
+    "description": "Build or buy your dream home with RMCL's Housing Loan. Flexible repayment terms and competitive interest rates make homeownership achievable.",
+    "features": [
+      "Loan amount up to NPR 2 Crore",
+      "Repayment up to 20 years",
+      "Land & building as collateral",
+      "Covers construction, purchase, or renovation",
+      "EMI starts after construction completion"
+    ],
+    "requirements": [
+      "Land ownership certificate (Lalpurja)",
+      "Approved building plan",
+      "Citizenship Certificate",
+      "Income proof / salary certificate",
+      "Property valuation report",
+      "2 passport size photos"
+    ],
+    "facilities": ["ABBS", "SMS Banking", "Top-up loan available", "Balance transfer facility"]
+  },
+  {
+    "id": "energy-loan",
+    "slug": "energy-loan",
+    "name": "Energy Loan",
+    "emoji": "⚡",
+    "category": "loan",
+    "rate": "11.5% p.a. onwards",
+    "rateValue": 11.5,
+    "description": "Finance solar panels, biogas plants, improved cookstoves, micro-hydro, and other renewable energy solutions for your home or business.",
+    "features": [
+      "Loan amount up to NPR 10 Lakhs",
+      "Repayment up to 5 years",
+      "Support for government energy subsidy programs",
+      "Minimal documentation for small energy loans",
+      "Covers installation and equipment costs"
+    ],
+    "requirements": [
+      "Citizenship Certificate",
+      "Quotation from certified installer",
+      "Land/home ownership proof",
+      "2 passport size photos"
+    ],
+    "facilities": ["ABBS", "SMS Banking", "Subsidy facilitation", "Flexible EMI"]
+  },
+  {
+    "id": "personal-loan",
+    "slug": "personal-loan",
+    "name": "Personal Loan",
+    "emoji": "👤",
+    "category": "loan",
+    "rate": "14% p.a. onwards",
+    "rateValue": 14,
+    "description": "Quick disbursement personal loans for medical expenses, travel, family celebrations, home furnishings, and other personal needs.",
+    "features": [
+      "Loan amount up to NPR 5 Lakhs",
+      "Repayment up to 3 years",
+      "Minimal documentation",
+      "Quick disbursement within 3 working days",
+      "No business plan required"
+    ],
+    "requirements": [
+      "Citizenship Certificate",
+      "Income proof / salary slip",
+      "2 passport size photos",
+      "Guarantor (for amounts above NPR 1 Lakh)"
+    ],
+    "facilities": ["ABBS", "Mobile Banking", "SMS Alerts", "Prepayment option"]
+  },
+  {
+    "id": "industry-loan",
+    "slug": "industry-loan",
+    "name": "Industry Loan",
+    "emoji": "🏭",
+    "category": "loan",
+    "rate": "13.5% p.a. onwards",
+    "rateValue": 13.5,
+    "description": "Support for cottage and small industries, manufacturing units, and production-based businesses to acquire machinery, raw materials, and set up or expand operations.",
+    "features": [
+      "Loan amount up to NPR 1.5 Crore",
+      "Repayment up to 10 years",
+      "Fixed and floating rate options",
+      "Covers machinery, raw materials, working capital"
+    ],
+    "requirements": [
+      "Industry registration certificate",
+      "PAN/VAT certificate",
+      "Project report",
+      "Citizenship Certificate",
+      "2 passport size photos"
+    ],
+    "facilities": ["ABBS", "Mobile Banking", "Flexible EMI", "Working capital facility"]
+  },
+  {
+    "id": "hire-purchase-loan",
+    "slug": "hire-purchase-loan",
+    "name": "Hire Purchase Loan",
+    "emoji": "🚗",
+    "category": "loan",
+    "rate": "13% p.a. onwards",
+    "rateValue": 13,
+    "description": "Finance the purchase of vehicles, machinery, and equipment under a hire purchase arrangement, with the asset serving as collateral.",
+    "features": [
+      "Covers 80% of asset value",
+      "Repayment up to 5 years",
+      "Vehicle/asset as primary collateral",
+      "Available for both commercial and personal vehicles"
+    ],
+    "requirements": [
+      "Vehicle/asset quotation",
+      "Citizenship Certificate",
+      "Driving license (for vehicle loans)",
+      "Income proof",
+      "2 passport size photos"
+    ],
+    "facilities": ["ABBS", "SMS Banking", "Insurance facilitation"]
+  },
+  {
+    "id": "general-savings",
+    "slug": "general-savings",
+    "name": "General Savings",
+    "emoji": "💰",
+    "category": "deposit",
+    "rate": "6% p.a.",
+    "rateValue": 6,
+    "description": "A flexible savings account with no minimum balance requirement. Earn interest while keeping your funds accessible at any time.",
+    "features": [
+      "No minimum balance requirement",
+      "Unlimited withdrawals",
+      "Interest credited quarterly",
+      "Free account statement",
+      "Accessible at all RMCL branches (ABBS)"
+    ],
+    "requirements": [
+      "Account Opening Form",
+      "Copy of Citizenship Certificate",
+      "2 Passport Size Photos",
+      "Copy of Citizenship/ID of nominee",
+      "1 Passport Size Photo of nominee"
+    ],
+    "facilities": ["Free ABBS", "Free Account Statement", "Smart Mobile Banking", "SMS Banking"]
+  },
+  {
+    "id": "fixed-deposit",
+    "slug": "fixed-deposit-account",
+    "name": "Fixed Deposit",
+    "emoji": "🔒",
+    "category": "deposit",
+    "rate": "Up to 12% p.a.",
+    "rateValue": 12,
+    "description": "Lock your savings for a fixed term and earn the highest available interest rates. Ideal for members who want guaranteed returns on a lump sum.",
+    "interestRates": [
+      { "period": "½ Year", "rate": "9%" },
+      { "period": "1 Year", "rate": "10%" },
+      { "period": "2 Years", "rate": "11%" },
+      { "period": "3 Years", "rate": "12%" }
+    ],
+    "features": [
+      "Competitive, fixed interest rates",
+      "Flexible deposit amounts",
+      "Automatic renewal option at maturity",
+      "90% loan against deposit available",
+      "Multiple interest payout frequencies"
+    ],
+    "requirements": [
+      "Account Opening Form",
+      "Copy of Citizenship Certificate",
+      "2 Passport Size Photos",
+      "Copy of Citizenship/ID of nominee",
+      "1 Passport Size Photo of nominee"
+    ],
+    "facilities": ["Free ABBS", "Free Account Statement", "Smart Mobile Banking", "SMS Banking", "90% Loan against Deposit"]
+  },
+  {
+    "id": "recurring-savings",
+    "slug": "recurring-savings",
+    "name": "Recurring Savings",
+    "emoji": "🔄",
+    "category": "deposit",
+    "rate": "8% p.a.",
+    "rateValue": 8,
+    "description": "Save a fixed amount every month systematically and build a corpus for your future goals. Perfect for salaried individuals and regular earners.",
+    "features": [
+      "Fixed monthly deposit",
+      "Compounding interest benefit",
+      "Flexible tenure from 1 to 10 years",
+      "Loan facility against recurring deposit",
+      "Premature closure with reduced interest"
+    ],
+    "requirements": [
+      "Account Opening Form",
+      "Copy of Citizenship Certificate",
+      "2 Passport Size Photos",
+      "Nominee details"
+    ],
+    "facilities": ["ABBS", "Mobile Banking", "SMS Banking", "Auto-debit from savings account"]
+  },
+  {
+    "id": "long-term-savings",
+    "slug": "long-term-savings-account",
+    "name": "Long Term Savings",
+    "emoji": "📈",
+    "category": "deposit",
+    "rate": "9% p.a.",
+    "rateValue": 9,
+    "description": "A 5–10 year savings plan designed for retirement, children's education, or long-term wealth creation. Earn superior returns with extended tenure.",
+    "features": [
+      "Tenure of 5 to 10 years",
+      "Higher interest rates for longer tenures",
+      "Partial withdrawal allowed after 3 years",
+      "Loan against long-term savings available",
+      "Bonus interest for members"
+    ],
+    "requirements": [
+      "Account Opening Form",
+      "Copy of Citizenship Certificate",
+      "2 Passport Size Photos",
+      "Nominee details with citizenship copy"
+    ],
+    "facilities": ["ABBS", "Mobile Banking", "Bonus interest for long-standing members", "Loan facility"]
+  },
+  {
+    "id": "microfinance-dept",
+    "slug": "micro-finance-department",
+    "name": "Micro Finance Department",
+    "emoji": "🤝",
+    "category": "microfinance",
+    "rate": "18% p.a.",
+    "rateValue": 18,
+    "description": "RMCL's dedicated microfinance department provides group-based lending and savings programs for low-income households, women entrepreneurs, and rural communities.",
+    "features": [
+      "Group-based lending (5–20 members per group)",
+      "No traditional collateral required",
+      "Financial literacy training included",
+      "Weekly/monthly group meetings",
+      "Progressive loan model"
+    ],
+    "requirements": [
+      "Group formation (5–20 members)",
+      "Citizenship Certificate of all members",
+      "Passport size photos",
+      "Group savings account"
+    ],
+    "facilities": ["Group Insurance", "Financial Literacy Training", "Business Development Support"]
+  },
+  {
+    "id": "microfinance-loan",
+    "slug": "royal-microfinances-loan-product",
+    "name": "Microfinance Loan Products",
+    "emoji": "🏪",
+    "category": "microfinance",
+    "rate": "18% p.a.",
+    "rateValue": 18,
+    "description": "Micro loans for cottage industries, small shops, vegetable farming, livestock, and income-generating activities targeting marginalized communities.",
+    "features": [
+      "Loan amount from NPR 5,000 to NPR 3 Lakhs",
+      "Repayment in weekly or monthly installments",
+      "Social collateral (group guarantee)",
+      "Loans for productive purposes only",
+      "Repeat loans with higher amounts for good borrowers"
+    ],
+    "requirements": [
+      "Active group membership",
+      "Group savings contribution",
+      "Loan purpose justification",
+      "Group approval"
+    ],
+    "facilities": ["Group Insurance", "Savings Linked Loans", "Business Training"]
+  },
+  {
+    "id": "microfinance-savings",
+    "slug": "savings-product-of-microfinance",
+    "name": "Microfinance Savings",
+    "emoji": "🪙",
+    "category": "microfinance",
+    "rate": "6% p.a.",
+    "rateValue": 6,
+    "description": "Compulsory and voluntary savings products designed around the microfinance group model, promoting a savings culture among low-income members.",
+    "features": [
+      "Compulsory group savings",
+      "Voluntary individual savings",
+      "Interest-bearing savings",
+      "Savings accessible after group exit",
+      "Encourages financial discipline"
+    ],
+    "requirements": [
+      "Active group membership",
+      "Regular group attendance"
+    ],
+    "facilities": ["Group Insurance", "Linked to Loan Eligibility", "Financial Training"]
+  }
+]
