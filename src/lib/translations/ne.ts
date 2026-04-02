@@ -81,7 +81,12 @@ export const ne: Translations = {
     tabLoans: "ऋणहरू",
     tabDeposits: "निक्षेपहरू",
     tabMicrofinance: "लघुवित्त",
+    tabCurrentRates: "हालका दरहरू",
     features: "विशेषताहरू",
+    currentRatesTitle: "निक्षेप उत्पादनहरूमा हालको ब्याजदर",
+    currentRatesSubtitle: "सञ्चालक समितिद्वारा स्वीकृत नवीनतम तालिका अनुसार प्रभावकारी दरहरू।",
+    signedBy: "सीताराम काफ्ले",
+    signedByTitle: "अध्यक्ष, आरएमसीएल",
   },
 
   // Branches section

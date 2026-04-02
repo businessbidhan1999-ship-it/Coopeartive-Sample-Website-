@@ -82,7 +82,12 @@ export const en = {
     tabLoans: "Loans",
     tabDeposits: "Deposits",
     tabMicrofinance: "Microfinance",
+    tabCurrentRates: "Current Rates",
     features: "features",
+    currentRatesTitle: "Current Interest Rates on Deposit Products",
+    currentRatesSubtitle: "Effective rates as per the latest schedule approved by the Board of Directors.",
+    signedBy: "Sitaram Kaphle",
+    signedByTitle: "Chairman, RMCL",
   },
 
   // Branches section

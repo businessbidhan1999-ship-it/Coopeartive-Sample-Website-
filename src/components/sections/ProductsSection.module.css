@@ -146,12 +146,128 @@
 }
 .card:hover .arrow { transform: translateX(5px); }
 
+/* Current Rates tab accent */
+.tabRates {
+  border-left: 1px solid rgba(201,168,76,0.15);
+  margin-left: 4px;
+}
+
+/* Rates panel */
+.ratesPanel {
+  transition: opacity 0.2s, transform 0.2s;
+}
+.ratesLayout {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 48px;
+  align-items: start;
+  animation: cardReveal 0.45s var(--ease-out) both;
+}
+.ratesTable {
+  background: rgba(255,255,255,0.025);
+  border: 1px solid rgba(201,168,76,0.15);
+  border-radius: 14px;
+  padding: 32px;
+}
+.ratesTitle {
+  font-family: var(--font-display);
+  font-size: 22px; font-weight: 600;
+  color: var(--royal-cream);
+  margin-bottom: 8px;
+}
+.ratesSubtitle {
+  font-size: 13px;
+  color: rgba(250,246,238,0.45);
+  margin-bottom: 28px;
+  line-height: 1.5;
+}
+.table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+.table thead th {
+  font-size: 10px; font-weight: 600;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--royal-gold);
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid rgba(201,168,76,0.2);
+}
+.table tbody td {
+  font-size: 14px;
+  color: rgba(250,246,238,0.75);
+  padding: 14px 16px;
+  border-bottom: 1px solid rgba(201,168,76,0.06);
+  transition: background 0.15s, color 0.15s;
+}
+.table tbody tr:hover td {
+  background: rgba(201,168,76,0.04);
+  color: var(--royal-cream);
+}
+.table tbody tr:last-child td {
+  border-bottom: none;
+}
+.rateCell {
+  font-weight: 600;
+  color: var(--royal-gold) !important;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Chairman side */
+.ratesSide {
+  display: flex; flex-direction: column; align-items: center;
+  gap: 20px;
+  animation: cardReveal 0.55s var(--ease-out) 0.1s both;
+}
+.chairmanPhoto {
+  width: 280px; height: 340px;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(201,168,76,0.2);
+  background: rgba(255,255,255,0.03);
+  position: relative;
+}
+.chairmanImg {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+.photoPlaceholder {
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  background: linear-gradient(135deg, rgba(139,26,26,0.15), rgba(201,168,76,0.1));
+  color: rgba(250,246,238,0.25);
+  font-family: var(--font-display);
+  font-size: 16px; letter-spacing: 0.1em; text-transform: uppercase;
+}
+.chairmanSign {
+  text-align: center;
+}
+.signName {
+  font-family: var(--font-display);
+  font-size: 18px; font-weight: 600;
+  color: var(--royal-cream);
+  margin-bottom: 4px;
+}
+.signTitle {
+  font-size: 12px;
+  color: var(--royal-gold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 @media (max-width: 768px) {
   .section { padding: 70px 0; }
   .header { flex-direction: column; align-items: flex-start; }
   .tabs { width: 100%; overflow-x: auto; }
+  .ratesLayout { grid-template-columns: 1fr; gap: 32px; }
+  .ratesSide { order: -1; }
+  .chairmanPhoto { width: 200px; height: 250px; }
 }
 @media (max-width: 480px) {
   .tab { padding: 9px 14px; font-size: 13px; }
   .grid { grid-template-columns: 1fr; gap: 14px; }
+  .ratesTable { padding: 20px 16px; }
+  .ratesTitle { font-size: 18px; }
 }

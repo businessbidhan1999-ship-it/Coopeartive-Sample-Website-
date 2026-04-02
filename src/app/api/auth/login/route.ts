@@ -25,7 +25,7 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
     return NextResponse.json({ error: "Invalid credentials" }, { status: 401 });
   }
 
-  const users = getAdminUsers();
+  const users = await getAdminUsers();
   const user = users.find((u) => u.username === username);
 
   // Always run bcrypt compare to prevent timing attacks (even if user not found)

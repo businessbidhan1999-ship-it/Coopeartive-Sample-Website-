@@ -91,21 +91,24 @@
 
 /* Desktop Dropdown */
 .dropdown, .mega {
-  position: absolute; top: calc(100% + 10px); left: 0;
-  background: rgba(12,7,2,0.97);
-  backdrop-filter: blur(20px);
-  border: 1px solid rgba(201,168,76,0.18);
-  border-radius: var(--radius-md);
-  padding: 8px;
-  box-shadow: 0 24px 70px rgba(0,0,0,0.6), 0 0 0 1px rgba(201,168,76,0.05);
+  position: absolute; top: 100%; left: 0;
+  padding-top: 6px;
   z-index: 9999;
   min-width: 210px;
 
   /* Hidden state */
   opacity: 0;
   pointer-events: none;
-  transform: translateY(-8px);
+  transform: translateY(-4px);
   transition: opacity 0.22s var(--ease-out), transform 0.22s var(--ease-out);
+}
+.dropdownInner, .megaInner {
+  background: rgba(12,7,2,0.97);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(201,168,76,0.18);
+  border-radius: var(--radius-md);
+  padding: 8px;
+  box-shadow: 0 24px 70px rgba(0,0,0,0.6), 0 0 0 1px rgba(201,168,76,0.05);
 }
 
 .item:hover .dropdown,
@@ -115,7 +118,7 @@
   transform: translateY(0);
 }
 
-.mega {
+.megaInner {
   display: grid !important;
   grid-template-columns: repeat(3, 1fr);
   gap: 4px;

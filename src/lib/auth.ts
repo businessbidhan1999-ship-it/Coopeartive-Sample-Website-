@@ -50,13 +50,7 @@ export interface AdminUser {
   role: "admin" | "editor";
 }
 
-export function getAdminUsers(): AdminUser[] {
-  const raw = process.env.ADMIN_USERS;
-  if (!raw) return [];
-  try {
-    return JSON.parse(raw) as AdminUser[];
-  } catch {
-    console.error("ADMIN_USERS env var is not valid JSON");
-    return [];
-  }
+export async function getAdminUsers(): Promise<AdminUser[]> {
+  const { getAdminUsersFromFile } = await import("./admin-users");
+  return getAdminUsersFromFile();
 }

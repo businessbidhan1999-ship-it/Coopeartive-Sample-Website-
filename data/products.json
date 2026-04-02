@@ -22,7 +22,12 @@
       "Account statement (last 6 months)",
       "Project/farm plan for larger amounts"
     ],
-    "facilities": ["Any Branch Banking Service (ABBS)", "SMS Alerts", "Flexible EMI", "Top-up facility"]
+    "facilities": [
+      "Any Branch Banking Service (ABBS)",
+      "SMS Alerts",
+      "Flexible EMI",
+      "Top-up facility"
+    ]
   },
   {
     "id": "business-loan",
@@ -48,7 +53,12 @@
       "Bank/cooperative account statement (1 year)",
       "2 passport size photos"
     ],
-    "facilities": ["ABBS", "Mobile Banking", "SMS Alerts", "Overdraft facility"]
+    "facilities": [
+      "ABBS",
+      "Mobile Banking",
+      "SMS Alerts",
+      "Overdraft facility"
+    ]
   },
   {
     "id": "education-loan",
@@ -74,7 +84,12 @@
       "Guarantor details",
       "2 passport size photos"
     ],
-    "facilities": ["ABBS", "Mobile Banking", "Flexible repayment", "Top-up on course extension"]
+    "facilities": [
+      "ABBS",
+      "Mobile Banking",
+      "Flexible repayment",
+      "Top-up on course extension"
+    ]
   },
   {
     "id": "housing-loan",
@@ -100,7 +115,12 @@
       "Property valuation report",
       "2 passport size photos"
     ],
-    "facilities": ["ABBS", "SMS Banking", "Top-up loan available", "Balance transfer facility"]
+    "facilities": [
+      "ABBS",
+      "SMS Banking",
+      "Top-up loan available",
+      "Balance transfer facility"
+    ]
   },
   {
     "id": "energy-loan",
@@ -124,7 +144,12 @@
       "Land/home ownership proof",
       "2 passport size photos"
     ],
-    "facilities": ["ABBS", "SMS Banking", "Subsidy facilitation", "Flexible EMI"]
+    "facilities": [
+      "ABBS",
+      "SMS Banking",
+      "Subsidy facilitation",
+      "Flexible EMI"
+    ]
   },
   {
     "id": "personal-loan",
@@ -148,7 +173,12 @@
       "2 passport size photos",
       "Guarantor (for amounts above NPR 1 Lakh)"
     ],
-    "facilities": ["ABBS", "Mobile Banking", "SMS Alerts", "Prepayment option"]
+    "facilities": [
+      "ABBS",
+      "Mobile Banking",
+      "SMS Alerts",
+      "Prepayment option"
+    ]
   },
   {
     "id": "industry-loan",
@@ -172,7 +202,12 @@
       "Citizenship Certificate",
       "2 passport size photos"
     ],
-    "facilities": ["ABBS", "Mobile Banking", "Flexible EMI", "Working capital facility"]
+    "facilities": [
+      "ABBS",
+      "Mobile Banking",
+      "Flexible EMI",
+      "Working capital facility"
+    ]
   },
   {
     "id": "hire-purchase-loan",
@@ -196,7 +231,11 @@
       "Income proof",
       "2 passport size photos"
     ],
-    "facilities": ["ABBS", "SMS Banking", "Insurance facilitation"]
+    "facilities": [
+      "ABBS",
+      "SMS Banking",
+      "Insurance facilitation"
+    ]
   },
   {
     "id": "general-savings",
@@ -204,8 +243,8 @@
     "name": "General Savings",
     "emoji": "💰",
     "category": "deposit",
-    "rate": "6% p.a.",
-    "rateValue": 6,
+    "rate": "upto 5% p.a.",
+    "rateValue": 3,
     "description": "A flexible savings account with no minimum balance requirement. Earn interest while keeping your funds accessible at any time.",
     "features": [
       "No minimum balance requirement",
@@ -221,7 +260,12 @@
       "Copy of Citizenship/ID of nominee",
       "1 Passport Size Photo of nominee"
     ],
-    "facilities": ["Free ABBS", "Free Account Statement", "Smart Mobile Banking", "SMS Banking"]
+    "facilities": [
+      "Free ABBS",
+      "Free Account Statement",
+      "Smart Mobile Banking",
+      "SMS Banking"
+    ]
   },
   {
     "id": "fixed-deposit",
@@ -229,14 +273,26 @@
     "name": "Fixed Deposit",
     "emoji": "🔒",
     "category": "deposit",
-    "rate": "Up to 12% p.a.",
-    "rateValue": 12,
+    "rate": "Up to 8% p.a.",
+    "rateValue": 5.5,
     "description": "Lock your savings for a fixed term and earn the highest available interest rates. Ideal for members who want guaranteed returns on a lump sum.",
     "interestRates": [
-      { "period": "½ Year", "rate": "9%" },
-      { "period": "1 Year", "rate": "10%" },
-      { "period": "2 Years", "rate": "11%" },
-      { "period": "3 Years", "rate": "12%" }
+      {
+        "period": "½ Year",
+        "rate": "9%"
+      },
+      {
+        "period": "1 Year",
+        "rate": "10%"
+      },
+      {
+        "period": "2 Years",
+        "rate": "11%"
+      },
+      {
+        "period": "3 Years",
+        "rate": "12%"
+      }
     ],
     "features": [
       "Competitive, fixed interest rates",
@@ -252,7 +308,13 @@
       "Copy of Citizenship/ID of nominee",
       "1 Passport Size Photo of nominee"
     ],
-    "facilities": ["Free ABBS", "Free Account Statement", "Smart Mobile Banking", "SMS Banking", "90% Loan against Deposit"]
+    "facilities": [
+      "Free ABBS",
+      "Free Account Statement",
+      "Smart Mobile Banking",
+      "SMS Banking",
+      "90% Loan against Deposit"
+    ]
   },
   {
     "id": "recurring-savings",
@@ -276,7 +338,12 @@
       "2 Passport Size Photos",
       "Nominee details"
     ],
-    "facilities": ["ABBS", "Mobile Banking", "SMS Banking", "Auto-debit from savings account"]
+    "facilities": [
+      "ABBS",
+      "Mobile Banking",
+      "SMS Banking",
+      "Auto-debit from savings account"
+    ]
   },
   {
     "id": "long-term-savings",
@@ -300,7 +367,12 @@
       "2 Passport Size Photos",
       "Nominee details with citizenship copy"
     ],
-    "facilities": ["ABBS", "Mobile Banking", "Bonus interest for long-standing members", "Loan facility"]
+    "facilities": [
+      "ABBS",
+      "Mobile Banking",
+      "Bonus interest for long-standing members",
+      "Loan facility"
+    ]
   },
   {
     "id": "microfinance-dept",
@@ -324,7 +396,11 @@
       "Passport size photos",
       "Group savings account"
     ],
-    "facilities": ["Group Insurance", "Financial Literacy Training", "Business Development Support"]
+    "facilities": [
+      "Group Insurance",
+      "Financial Literacy Training",
+      "Business Development Support"
+    ]
   },
   {
     "id": "microfinance-loan",
@@ -348,7 +424,11 @@
       "Loan purpose justification",
       "Group approval"
     ],
-    "facilities": ["Group Insurance", "Savings Linked Loans", "Business Training"]
+    "facilities": [
+      "Group Insurance",
+      "Savings Linked Loans",
+      "Business Training"
+    ]
   },
   {
     "id": "microfinance-savings",
@@ -370,6 +450,10 @@
       "Active group membership",
       "Regular group attendance"
     ],
-    "facilities": ["Group Insurance", "Linked to Loan Eligibility", "Financial Training"]
+    "facilities": [
+      "Group Insurance",
+      "Linked to Loan Eligibility",
+      "Financial Training"
+    ]
   }
 ]

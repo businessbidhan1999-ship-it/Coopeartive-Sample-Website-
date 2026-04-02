@@ -64,5 +64,16 @@
     "lat": 27.601,
     "lng": 85.301,
     "isHQ": false
+  },
+  {
+    "id": "mnh7c3rk6rsc1",
+    "name": "Corporate Office",
+    "type": "Head Office",
+    "inCharge": "Govindha Dhakal",
+    "address": "Basundhara, Royal Complex",
+    "phone": "",
+    "lat": 27.7523,
+    "lng": 85.3254,
+    "isHQ": true
   }
 ]

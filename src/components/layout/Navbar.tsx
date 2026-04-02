@@ -125,26 +125,30 @@ export function Navbar() {
 
               {item.children && !item.mega && (
                 <div className={styles.dropdown} role="menu">
-                  {item.children.map((child) => (
-                    <Link key={child.href} href={child.href} className={styles.dropdownLink} role="menuitem">
-                      {child.label}
-                    </Link>
-                  ))}
+                  <div className={styles.dropdownInner}>
+                    {item.children.map((child) => (
+                      <Link key={child.href} href={child.href} className={styles.dropdownLink} role="menuitem">
+                        {child.label}
+                      </Link>
+                    ))}
+                  </div>
                 </div>
               )}
 
               {item.mega && item.columns && (
                 <div className={styles.mega} role="menu">
-                  {item.columns.map((col) => (
-                    <div key={col.title} className={styles.megaCol}>
-                      <div className={styles.megaTitle}>{col.title}</div>
-                      {col.links.map((link) => (
-                        <Link key={link.href} href={link.href} className={styles.dropdownLink} role="menuitem">
-                          {link.label}
-                        </Link>
-                      ))}
-                    </div>
-                  ))}
+                  <div className={styles.megaInner}>
+                    {item.columns.map((col) => (
+                      <div key={col.title} className={styles.megaCol}>
+                        <div className={styles.megaTitle}>{col.title}</div>
+                        {col.links.map((link) => (
+                          <Link key={link.href} href={link.href} className={styles.dropdownLink} role="menuitem">
+                            {link.label}
+                          </Link>
+                        ))}
+                      </div>
+                    ))}
+                  </div>
                 </div>
               )}
             </li>
