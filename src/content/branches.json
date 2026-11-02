@@ -1,0 +1,35 @@
+[
+  {
+    "id": "1",
+    "name": "Kathmandu Member Centre",
+    "type": "Head Office",
+    "inCharge": "Bikash Tamang",
+    "address": "Kathmandu, Nepal",
+    "phone": "",
+    "lat": 27.7172,
+    "lng": 85.324,
+    "isHQ": true
+  },
+  {
+    "id": "2",
+    "name": "Tokha Service Centre",
+    "type": "Service Centre",
+    "inCharge": "Anita Maharjan",
+    "address": "Tokha, Kathmandu Valley",
+    "phone": "",
+    "lat": 27.761,
+    "lng": 85.328,
+    "isHQ": false
+  },
+  {
+    "id": "3",
+    "name": "Pharping Service Centre",
+    "type": "Service Centre",
+    "inCharge": "Hari Prasad Adhikari",
+    "address": "Pharping, Kathmandu Valley",
+    "phone": "",
+    "lat": 27.612,
+    "lng": 85.267,
+    "isHQ": false
+  }
+]

@@ -1,0 +1,72 @@
+{
+  "chairman": {
+    "name": "Prakash Shrestha",
+    "title": "Chairperson",
+    "imageUrl": "/images/team/person-1.webp",
+    "message": "Namaste,\n\nA cooperative begins with people who decide to look after something together. It might be a first savings account, a family farm or a small shop on the corner.\n\nOur role is to listen, explain the choices clearly and help members make plans they understand. That includes being open about rates, fees and the responsibilities that come with borrowing.\n\nMembers should have a voice in how their cooperative works. Regular conversations, clear records and a willingness to answer difficult questions are part of that responsibility.\n\nThank you for taking a little time to explore Mero Sahakari. This sample website shows how a cooperative can make its services easier to understand and its people easier to reach.\n\nWith warm regards,"
+  },
+  "boardOfDirectors": [
+    {
+      "id": "1",
+      "name": "Prakash Shrestha",
+      "role": "Chairperson",
+      "imageUrl": "/images/team/person-1.webp"
+    },
+    {
+      "id": "2",
+      "name": "Srijana Karki",
+      "role": "Vice chairperson",
+      "imageUrl": "/images/team/person-2.webp"
+    },
+    {
+      "id": "3",
+      "name": "Bikash Tamang",
+      "role": "Secretary",
+      "imageUrl": "/images/team/person-3.webp"
+    },
+    {
+      "id": "4",
+      "name": "Anita Maharjan",
+      "role": "Treasurer",
+      "imageUrl": "/images/team/person-4.webp"
+    },
+    {
+      "id": "5",
+      "name": "Hari Prasad Adhikari",
+      "role": "Board member",
+      "imageUrl": "/images/team/person-5.webp"
+    },
+    {
+      "id": "6",
+      "name": "Meena Gurung",
+      "role": "Board member",
+      "imageUrl": "/images/team/person-6.webp"
+    }
+  ],
+  "topManagement": [
+    {
+      "id": "4",
+      "name": "Anita Maharjan",
+      "role": "Member services lead",
+      "imageUrl": "/images/team/person-4.webp"
+    },
+    {
+      "id": "3",
+      "name": "Bikash Tamang",
+      "role": "Branch manager",
+      "imageUrl": "/images/team/person-3.webp"
+    },
+    {
+      "id": "6",
+      "name": "Meena Gurung",
+      "role": "Savings officer",
+      "imageUrl": "/images/team/person-6.webp"
+    },
+    {
+      "id": "5",
+      "name": "Hari Prasad Adhikari",
+      "role": "Agriculture support officer",
+      "imageUrl": "/images/team/person-5.webp"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 // src/app/api/auth/session/route.ts
 // Returns current session info (used by admin layout to display username)
-import { NextResponse } from "next/server";
-import { getSession } from "@/lib/auth";
+import { NextResponse } from 'next/server';
+import { getSession } from '@/lib/server/auth';
 
 export async function GET(): Promise<NextResponse> {
   const session = await getSession();

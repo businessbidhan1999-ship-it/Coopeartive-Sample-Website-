@@ -1,7 +1,6 @@
-// src/app/api/admin/branches/route.ts
-import { NextRequest, NextResponse } from "next/server";
-import { readJSON, writeJSON, generateId } from "@/lib/json-store";
-import { requireAdminSession } from "@/lib/api-auth";
+import { NextRequest, NextResponse } from 'next/server';
+import { readJSON, writeJSON, generateId } from '@/lib/server/store';
+import { requireAdminSession } from '@/lib/server/api-auth';
 
 interface Branch {
   id: string;
@@ -18,7 +17,7 @@ interface Branch {
 export async function GET(): Promise<NextResponse> {
   const { error } = await requireAdminSession();
   if (error) return error;
-  const branches = await readJSON<Branch[]>("branches");
+  const branches = await readJSON<Branch[]>('branches');
   return NextResponse.json(branches);
 }
 
@@ -26,25 +25,25 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
   const { error } = await requireAdminSession();
   if (error) return error;
 
-  const body = await request.json() as Partial<Branch>;
+  const body = (await request.json()) as Partial<Branch>;
   if (!body.name?.trim()) {
-    return NextResponse.json({ error: "Branch name is required" }, { status: 400 });
+    return NextResponse.json({ error: 'Branch name is required' }, { status: 400 });
   }
 
-  const branches = await readJSON<Branch[]>("branches");
+  const branches = await readJSON<Branch[]>('branches');
   const newBranch: Branch = {
     id: generateId(),
     name: body.name.trim(),
-    type: body.type ?? "Branch",
-    inCharge: body.inCharge?.trim() ?? "",
-    address: body.address?.trim() ?? "",
-    phone: body.phone?.trim() ?? "",
+    type: body.type ?? 'Branch',
+    inCharge: body.inCharge?.trim() ?? '',
+    address: body.address?.trim() ?? '',
+    phone: body.phone?.trim() ?? '',
     lat: body.lat ?? 27.7172,
-    lng: body.lng ?? 85.3240,
+    lng: body.lng ?? 85.324,
     isHQ: body.isHQ ?? false,
   };
   branches.push(newBranch);
-  await writeJSON("branches", branches);
+  await writeJSON('branches', branches);
   return NextResponse.json(newBranch, { status: 201 });
 }
 
@@ -52,15 +51,15 @@ export async function PUT(request: NextRequest): Promise<NextResponse> {
   const { error } = await requireAdminSession();
   if (error) return error;
 
-  const body = await request.json() as Branch;
-  if (!body.id) return NextResponse.json({ error: "ID required" }, { status: 400 });
+  const body = (await request.json()) as Branch;
+  if (!body.id) return NextResponse.json({ error: 'ID required' }, { status: 400 });
 
-  const branches = await readJSON<Branch[]>("branches");
+  const branches = await readJSON<Branch[]>('branches');
   const idx = branches.findIndex((b) => b.id === body.id);
-  if (idx === -1) return NextResponse.json({ error: "Not found" }, { status: 404 });
+  if (idx === -1) return NextResponse.json({ error: 'Not found' }, { status: 404 });
 
   branches[idx] = { ...branches[idx], ...body };
-  await writeJSON("branches", branches);
+  await writeJSON('branches', branches);
   return NextResponse.json(branches[idx]);
 }
 
@@ -69,14 +68,14 @@ export async function DELETE(request: NextRequest): Promise<NextResponse> {
   if (error) return error;
 
   const { searchParams } = new URL(request.url);
-  const id = searchParams.get("id");
-  if (!id) return NextResponse.json({ error: "ID required" }, { status: 400 });
+  const id = searchParams.get('id');
+  if (!id) return NextResponse.json({ error: 'ID required' }, { status: 400 });
 
-  const branches = await readJSON<Branch[]>("branches");
+  const branches = await readJSON<Branch[]>('branches');
   const filtered = branches.filter((b) => b.id !== id);
   if (filtered.length === branches.length) {
-    return NextResponse.json({ error: "Not found" }, { status: 404 });
+    return NextResponse.json({ error: 'Not found' }, { status: 404 });
   }
-  await writeJSON("branches", filtered);
+  await writeJSON('branches', filtered);
   return NextResponse.json({ ok: true });
 }

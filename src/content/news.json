@@ -1,0 +1,35 @@
+[
+  {
+    "id": "1",
+    "title": "A little saving, a little more possibility",
+    "excerpt": "A simple way to start a savings habit, even when your income changes from month to month.",
+    "content": "You do not need a large amount to start a useful savings habit. Begin with an amount you can manage after food, rent, education and other essentials.\n\nChoose a regular day to put money aside. If your income changes with the season, plan around the months that are easier and leave enough for the quieter ones.\n\nBefore opening an account, ask about the minimum balance, withdrawal conditions, fees and how interest is calculated. Take time to compare the answers.\n\nThis is an illustrative member education article for the Mero Sahakari demo. It is general information, not a personal financial recommendation.",
+    "date": "2026-10-15",
+    "category": "Member guide",
+    "featured": true,
+    "imageUrl": "/images/news/saving-habit.webp",
+    "imageAlt": "Animated Nepali mother and daughter putting a few coins into a savings jar at home"
+  },
+  {
+    "id": "2",
+    "title": "What to bring to your first branch visit",
+    "excerpt": "A short checklist to make your first conversation a little easier.",
+    "content": "For an introductory conversation, bring your questions and a clear idea of what you would like to do. You do not need to commit to a product on your first visit.\n\nA real cooperative may ask for citizenship identification, recent photographs and address or income documents. Requirements vary by membership and service. Ask for the full checklist before sharing any documents.\n\nPlease do not upload identification or personal financial records to this sample website. No real branch appointments are arranged here.",
+    "date": "2026-10-08",
+    "category": "Membership",
+    "featured": false,
+    "imageUrl": "/images/news/first-branch-visit.webp",
+    "imageAlt": "Animated Nepali visitor carrying a document folder into a welcoming cooperative reception"
+  },
+  {
+    "id": "3",
+    "title": "Understanding your loan repayment",
+    "excerpt": "Look beyond the monthly instalment and ask about the total cost.",
+    "content": "A monthly instalment is only one part of a borrowing decision. Ask about the annual interest rate, the way it is calculated, processing charges, late fees and early repayment conditions.\n\nWrite down the full amount you expect to repay and compare it with your household income. Leave room for unexpected expenses and quieter months.\n\nThe calculator on this demo uses illustrative rates and a standard reducing-balance formula. It does not check eligibility, include all fees or make a loan offer.",
+    "date": "2026-10-01",
+    "category": "Financial literacy",
+    "featured": false,
+    "imageUrl": "/images/news/loan-repayment.webp",
+    "imageAlt": "Animated Nepali shopkeeper planning repayments with a calculator and monthly calendar"
+  }
+]

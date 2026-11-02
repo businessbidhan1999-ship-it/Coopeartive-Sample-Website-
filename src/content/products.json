@@ -1,0 +1,384 @@
+[
+  {
+    "id": "agriculture-loan",
+    "slug": "agriculture-loan",
+    "name": "Agriculture Loan",
+    "category": "loan",
+    "rate": "12% p.a. onwards",
+    "rateValue": 12,
+    "description": "From seeds to a new irrigation system, plan the next season with support that fits your farm.",
+    "features": [
+      "Loan amount up to NPR 50 Lakhs",
+      "Flexible repayment aligned with harvest cycles",
+      "Collateral: Land, livestock, or crop produce",
+      "Grace period available for seasonal farmers",
+      "Discuss seasonal repayment options"
+    ],
+    "requirements": [
+      "Citizenship Certificate copy",
+      "Land ownership certificate",
+      "Recent passport size photos (2)",
+      "Account statement (last 6 months)",
+      "Project/farm plan for larger amounts"
+    ],
+    "facilities": ["Member support", "Clear repayment information", "Help with documentation"],
+    "icon": "Sprout"
+  },
+  {
+    "id": "business-loan",
+    "slug": "business-loan",
+    "name": "Business Loan",
+    "category": "loan",
+    "rate": "13% p.a. onwards",
+    "rateValue": 13,
+    "description": "Stock your shop, replace equipment or take the next step with your small business.",
+    "features": [
+      "Loan amount up to NPR 1 Crore",
+      "Repayment period up to 7 years",
+      "Working capital and term loan options",
+      "Collateral: Property or business assets",
+      "Competitive processing fees"
+    ],
+    "requirements": [
+      "Business registration certificate",
+      "PAN/VAT certificate",
+      "Citizenship Certificate",
+      "Business plan / projected cash flow",
+      "Bank/cooperative account statement (1 year)",
+      "2 passport size photos"
+    ],
+    "facilities": ["Member support", "Clear repayment information", "Help with documentation"],
+    "icon": "Store"
+  },
+  {
+    "id": "education-loan",
+    "slug": "education-loan",
+    "name": "Education Loan",
+    "category": "loan",
+    "rate": "11% p.a. onwards",
+    "rateValue": 11,
+    "description": "Make room for tuition, books and the everyday costs of learning.",
+    "features": [
+      "Loan amount up to NPR 30 Lakhs",
+      "Moratorium period during study",
+      "Repayment starts 6 months after course completion",
+      "Security requirements depend on eligibility",
+      "Covers domestic and international education"
+    ],
+    "requirements": [
+      "Admission letter from institution",
+      "Citizenship Certificate (student & guardian)",
+      "Academic records (mark sheets)",
+      "Fee structure from institution",
+      "Guarantor details",
+      "2 passport size photos"
+    ],
+    "facilities": ["Member support", "Clear repayment information", "Help with documentation"],
+    "icon": "GraduationCap"
+  },
+  {
+    "id": "housing-loan",
+    "slug": "housing-loan",
+    "name": "Housing Loan",
+    "category": "loan",
+    "rate": "12.5% p.a. onwards",
+    "rateValue": 12.5,
+    "description": "Plan a home purchase, a new build or the repairs your family has been waiting for.",
+    "features": [
+      "Loan amount up to NPR 2 Crore",
+      "Repayment up to 20 years",
+      "Land & building as collateral",
+      "Covers construction, purchase, or renovation",
+      "EMI starts after construction completion"
+    ],
+    "requirements": [
+      "Land ownership certificate (Lalpurja)",
+      "Approved building plan",
+      "Citizenship Certificate",
+      "Income proof / salary certificate",
+      "Property valuation report",
+      "2 passport size photos"
+    ],
+    "facilities": ["Member support", "Clear repayment information", "Help with documentation"],
+    "icon": "Home"
+  },
+  {
+    "id": "energy-loan",
+    "slug": "energy-loan",
+    "name": "Energy Loan",
+    "category": "loan",
+    "rate": "11.5% p.a. onwards",
+    "rateValue": 11.5,
+    "description": "Explore financing for solar power and practical energy improvements at home or work.",
+    "features": [
+      "Loan amount up to NPR 10 Lakhs",
+      "Repayment up to 5 years",
+      "Support for government energy subsidy programs",
+      "Minimal documentation for small energy loans",
+      "Covers installation and equipment costs"
+    ],
+    "requirements": [
+      "Citizenship Certificate",
+      "Quotation from certified installer",
+      "Land/home ownership proof",
+      "2 passport size photos"
+    ],
+    "facilities": ["Member support", "Clear repayment information", "Help with documentation"],
+    "icon": "HandCoins"
+  },
+  {
+    "id": "personal-loan",
+    "slug": "personal-loan",
+    "name": "Personal Loan",
+    "category": "loan",
+    "rate": "14% p.a. onwards",
+    "rateValue": 14,
+    "description": "Talk through an important household expense and a repayment plan that suits your income.",
+    "features": [
+      "Loan amount up to NPR 5 Lakhs",
+      "Repayment up to 3 years",
+      "Minimal documentation",
+      "Quick disbursement within 3 working days",
+      "No business plan required"
+    ],
+    "requirements": [
+      "Citizenship Certificate",
+      "Income proof / salary slip",
+      "2 passport size photos",
+      "Guarantor (for amounts above NPR 1 Lakh)"
+    ],
+    "facilities": ["Member support", "Clear repayment information", "Help with documentation"],
+    "icon": "HandCoins"
+  },
+  {
+    "id": "industry-loan",
+    "slug": "industry-loan",
+    "name": "Industry Loan",
+    "category": "loan",
+    "rate": "13.5% p.a. onwards",
+    "rateValue": 13.5,
+    "description": "Support a local workshop or growing enterprise with equipment and working capital.",
+    "features": [
+      "Loan amount up to NPR 1.5 Crore",
+      "Repayment up to 10 years",
+      "Fixed and floating rate options",
+      "Covers machinery, raw materials, working capital"
+    ],
+    "requirements": [
+      "Industry registration certificate",
+      "PAN/VAT certificate",
+      "Project report",
+      "Citizenship Certificate",
+      "2 passport size photos"
+    ],
+    "facilities": ["Member support", "Clear repayment information", "Help with documentation"],
+    "icon": "HandCoins"
+  },
+  {
+    "id": "hire-purchase-loan",
+    "slug": "hire-purchase-loan",
+    "name": "Hire Purchase Loan",
+    "category": "loan",
+    "rate": "13% p.a. onwards",
+    "rateValue": 13,
+    "description": "Spread the cost of a vehicle or equipment used for your livelihood.",
+    "features": [
+      "Covers 80% of asset value",
+      "Repayment up to 5 years",
+      "Vehicle/asset as primary collateral",
+      "Available for both commercial and personal vehicles"
+    ],
+    "requirements": [
+      "Vehicle/asset quotation",
+      "Citizenship Certificate",
+      "Driving license (for vehicle loans)",
+      "Income proof",
+      "2 passport size photos"
+    ],
+    "facilities": ["Member support", "Clear repayment information", "Help with documentation"],
+    "icon": "HandCoins"
+  },
+  {
+    "id": "general-savings",
+    "slug": "general-savings",
+    "name": "General Savings",
+    "category": "deposit",
+    "rate": "6% p.a.",
+    "rateValue": 6,
+    "description": "Set a little aside, keep it within reach and build a habit that grows with you.",
+    "features": [
+      "No minimum balance requirement",
+      "Unlimited withdrawals",
+      "Interest credited quarterly",
+      "Free account statement",
+      "Accessible at all Mero Sahakari branches (ABBS)"
+    ],
+    "requirements": [
+      "Account Opening Form",
+      "Copy of Citizenship Certificate",
+      "2 Passport Size Photos",
+      "Copy of Citizenship/ID of nominee",
+      "1 Passport Size Photo of nominee"
+    ],
+    "facilities": ["Member support", "Clear repayment information", "Help with documentation"],
+    "icon": "Wallet"
+  },
+  {
+    "id": "fixed-deposit",
+    "slug": "fixed-deposit-account",
+    "name": "Fixed Deposit",
+    "category": "deposit",
+    "rate": "From 9% p.a.",
+    "rateValue": 9,
+    "description": "Put money aside for a set period and see how much it could earn before you decide.",
+    "interestRates": [
+      {
+        "period": "6 months",
+        "rate": "9% p.a."
+      },
+      {
+        "period": "1 year",
+        "rate": "10% p.a."
+      },
+      {
+        "period": "2 years",
+        "rate": "11% p.a."
+      },
+      {
+        "period": "3 years",
+        "rate": "12% p.a."
+      }
+    ],
+    "features": [
+      "Competitive, fixed interest rates",
+      "Flexible deposit amounts",
+      "Automatic renewal option at maturity",
+      "90% loan against deposit available",
+      "Multiple interest payout frequencies"
+    ],
+    "requirements": [
+      "Account Opening Form",
+      "Copy of Citizenship Certificate",
+      "2 Passport Size Photos",
+      "Copy of Citizenship/ID of nominee",
+      "1 Passport Size Photo of nominee"
+    ],
+    "facilities": ["Member support", "Clear repayment information", "Help with documentation"],
+    "icon": "HandCoins"
+  },
+  {
+    "id": "recurring-savings",
+    "slug": "recurring-savings",
+    "name": "Recurring Savings",
+    "category": "deposit",
+    "rate": "8% p.a.",
+    "rateValue": 8,
+    "description": "Save a manageable amount each month for something that matters to you.",
+    "features": [
+      "Fixed monthly deposit",
+      "Compounding interest benefit",
+      "Flexible tenure from 1 to 10 years",
+      "Loan facility against recurring deposit",
+      "Premature closure with reduced interest"
+    ],
+    "requirements": [
+      "Account Opening Form",
+      "Copy of Citizenship Certificate",
+      "2 Passport Size Photos",
+      "Nominee details"
+    ],
+    "facilities": ["Member support", "Clear repayment information", "Help with documentation"],
+    "icon": "CalendarDays"
+  },
+  {
+    "id": "long-term-savings",
+    "slug": "long-term-savings-account",
+    "name": "Long Term Savings",
+    "category": "deposit",
+    "rate": "9% p.a.",
+    "rateValue": 9,
+    "description": "Give your longer-term plans a regular place in the household budget.",
+    "features": [
+      "Tenure of 5 to 10 years",
+      "Higher interest rates for longer tenures",
+      "Partial withdrawal allowed after 3 years",
+      "Loan against long-term savings available",
+      "Bonus interest for members"
+    ],
+    "requirements": [
+      "Account Opening Form",
+      "Copy of Citizenship Certificate",
+      "2 Passport Size Photos",
+      "Nominee details with citizenship copy"
+    ],
+    "facilities": ["Member support", "Clear repayment information", "Help with documentation"],
+    "icon": "HandCoins"
+  },
+  {
+    "id": "microfinance-dept",
+    "slug": "micro-finance-department",
+    "name": "Community Group Support",
+    "category": "microfinance",
+    "rate": "18% p.a.",
+    "rateValue": 18,
+    "description": "Small, regular steps can help a household or community group plan ahead. Explore this sample service and its requirements.",
+    "features": [
+      "Group-based lending (5–20 members per group)",
+      "No traditional collateral required",
+      "Financial literacy training included",
+      "Weekly/monthly group meetings",
+      "Progressive loan model"
+    ],
+    "requirements": [
+      "Group formation (5–20 members)",
+      "Citizenship Certificate of all members",
+      "Passport size photos",
+      "Group savings account"
+    ],
+    "facilities": ["Member support", "Clear repayment information", "Help with documentation"],
+    "icon": "HandCoins"
+  },
+  {
+    "id": "microfinance-loan",
+    "slug": "microfinance-loan",
+    "name": "Microfinance Loan Products",
+    "category": "microfinance",
+    "rate": "18% p.a.",
+    "rateValue": 18,
+    "description": "Small, regular steps can help a household or community group plan ahead. Explore this sample service and its requirements.",
+    "features": [
+      "Loan amount from NPR 5,000 to NPR 3 Lakhs",
+      "Repayment in weekly or monthly installments",
+      "Social collateral (group guarantee)",
+      "Loans for productive purposes only",
+      "Repeat loans with higher amounts for good borrowers"
+    ],
+    "requirements": [
+      "Active group membership",
+      "Group savings contribution",
+      "Loan purpose justification",
+      "Group approval"
+    ],
+    "facilities": ["Member support", "Clear repayment information", "Help with documentation"],
+    "icon": "HandCoins"
+  },
+  {
+    "id": "microfinance-savings",
+    "slug": "savings-product-of-microfinance",
+    "name": "Microfinance Savings",
+    "category": "microfinance",
+    "rate": "6% p.a.",
+    "rateValue": 6,
+    "description": "Small, regular steps can help a household or community group plan ahead. Explore this sample service and its requirements.",
+    "features": [
+      "Compulsory group savings",
+      "Voluntary individual savings",
+      "Interest-bearing savings",
+      "Savings accessible after group exit",
+      "Encourages financial discipline"
+    ],
+    "requirements": ["Active group membership", "Regular group attendance"],
+    "facilities": ["Member support", "Clear repayment information", "Help with documentation"],
+    "icon": "HandCoins"
+  }
+]

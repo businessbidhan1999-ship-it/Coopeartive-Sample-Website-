@@ -1,51 +1,47 @@
-// src/app/layout.tsx
-import type { Metadata } from "next";
-import "@/styles/globals.css";
-import { Navbar } from "@/components/layout/Navbar";
-import { Footer } from "@/components/layout/Footer";
-import { Topbar } from "@/components/layout/Topbar";
-import { I18nWrapper } from "@/components/layout/I18nWrapper";
-import { siteConfig } from "@/lib/data";
+import type { Metadata, Viewport } from 'next';
+import '@/styles/globals.css';
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
   title: {
-    default: `${siteConfig.shortName} – ${siteConfig.name}`,
-    template: `%s | ${siteConfig.shortName}`,
+    default: 'Mero Sahakari | Together, for a better tomorrow',
+    template: '%s | Mero Sahakari',
   },
   description:
-    "Royal Multipurpose Cooperative Society Ltd. – Empowering communities in Nepal since 1998 through savings, loans, microfinance, and financial inclusion.",
-  keywords: ["cooperative", "Nepal", "savings", "loan", "microfinance", "RMCL", "Kathmandu"],
-  authors: [{ name: "RMCL" }],
+    'A warm, accessible sample website for a Nepali cooperative. Explore illustrative savings, loans, member services and the people behind Mero Sahakari.',
+  applicationName: 'Mero Sahakari',
   robots: { index: true, follow: true },
+  icons: { icon: '/images/brand/favicon.png', apple: '/images/brand/apple-touch-icon.png' },
   openGraph: {
-    type: "website",
-    locale: "en_US",
-    siteName: siteConfig.name,
-    title: siteConfig.name,
-    description: siteConfig.tagline,
+    type: 'website',
+    locale: 'en_NP',
+    siteName: 'Mero Sahakari',
+    title: 'Mero Sahakari',
+    description: 'Small steps. Shared hopes. A sample cooperative website for Nepal.',
+    images: [
+      {
+        url: '/images/hero-cooperative.webp',
+        width: 1440,
+        height: 960,
+        alt: 'Savings supporting homes, education and farming in a Nepali cooperative',
+      },
+    ],
   },
 };
-
+export const viewport: Viewport = { themeColor: '#234b3c' };
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
-        <meta httpEquiv="X-Content-Type-Options" content="nosniff" />
-        <meta httpEquiv="X-Frame-Options" content="DENY" />
-        <meta httpEquiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
-        <meta httpEquiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()" />
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link
+          rel="preload"
+          href="/fonts/dm-sans.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
       </head>
-      <body>
-        <I18nWrapper>
-          <Topbar />
-          <Navbar />
-          <main id="main-content">{children}</main>
-          <Footer />
-        </I18nWrapper>
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

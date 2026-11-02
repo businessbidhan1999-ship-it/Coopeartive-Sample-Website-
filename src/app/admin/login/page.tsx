@@ -1,185 +1,88 @@
-"use client";
-// src/app/admin/login/page.tsx
-import { useState, FormEvent, Suspense } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
-
+'use client';
+import { Suspense, useState, type FormEvent } from 'react';
+import Link from 'next/link';
+import { useRouter, useSearchParams } from 'next/navigation';
+import { Brand } from '@/components/layout/Brand';
+import { ArrowLeft, ArrowRight } from 'lucide-react';
 function LoginForm() {
-  const router = useRouter();
-  const searchParams = useSearchParams();
-  const from = searchParams.get("from") ?? "/admin";
-
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
-  const [loading, setLoading] = useState(false);
-
-  async function handleSubmit(e: FormEvent) {
-    e.preventDefault();
-    setError("");
-    setLoading(true);
-
+  const router = useRouter(),
+    params = useSearchParams();
+  const [error, setError] = useState(''),
+    [pending, setPending] = useState(false);
+  async function submit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    setPending(true);
+    setError('');
+    const data = Object.fromEntries(new FormData(event.currentTarget));
     try {
-      const res = await fetch("/api/auth/login", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ username, password }),
+      const response = await fetch('/api/auth/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
       });
-
-      if (res.ok) {
-        router.push(from);
-        router.refresh();
-      } else {
-        const data = await res.json();
-        setError(data.error ?? "Login failed");
-      }
-    } catch {
-      setError("Network error. Please try again.");
+      const result = await response.json();
+      if (!response.ok) throw new Error(result.error ?? 'Unable to sign in. Please try again.');
+      const from = params.get('from');
+      router.push(from && /^\/admin(?:\/|$)/.test(from) ? from : '/admin');
+      router.refresh();
+    } catch (caught) {
+      setError(caught instanceof Error ? caught.message : 'Check your connection and try again.');
     } finally {
-      setLoading(false);
+      setPending(false);
     }
   }
-
   return (
-    <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-      <div>
-        <label htmlFor="username" style={{ display: "block", fontSize: "13px", color: "rgba(250,246,238,0.6)", marginBottom: "6px" }}>
-          Username
-        </label>
+    <form onSubmit={submit}>
+      <div className="form-field">
+        <label htmlFor="username">Username</label>
         <input
           id="username"
-          type="text"
+          name="username"
           autoComplete="username"
           required
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-          disabled={loading}
-          style={{
-            width: "100%",
-            padding: "10px 14px",
-            background: "rgba(255,255,255,0.05)",
-            border: "1px solid rgba(201,168,76,0.2)",
-            borderRadius: "8px",
-            color: "#FAF6EE",
-            fontSize: "14px",
-            outline: "none",
-            boxSizing: "border-box",
-          }}
-          onFocus={(e) => e.target.style.borderColor = "rgba(201,168,76,0.5)"}
-          onBlur={(e) => e.target.style.borderColor = "rgba(201,168,76,0.2)"}
+          maxLength={64}
+          disabled={pending}
         />
       </div>
-
-      <div>
-        <label htmlFor="password" style={{ display: "block", fontSize: "13px", color: "rgba(250,246,238,0.6)", marginBottom: "6px" }}>
-          Password
-        </label>
+      <div className="form-field">
+        <label htmlFor="password">Password</label>
         <input
           id="password"
+          name="password"
           type="password"
           autoComplete="current-password"
           required
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          disabled={loading}
-          style={{
-            width: "100%",
-            padding: "10px 14px",
-            background: "rgba(255,255,255,0.05)",
-            border: "1px solid rgba(201,168,76,0.2)",
-            borderRadius: "8px",
-            color: "#FAF6EE",
-            fontSize: "14px",
-            outline: "none",
-            boxSizing: "border-box",
-          }}
-          onFocus={(e) => e.target.style.borderColor = "rgba(201,168,76,0.5)"}
-          onBlur={(e) => e.target.style.borderColor = "rgba(201,168,76,0.2)"}
+          maxLength={128}
+          disabled={pending}
         />
       </div>
-
       {error && (
-        <div style={{
-          padding: "10px 14px",
-          background: "rgba(139,26,26,0.2)",
-          border: "1px solid rgba(139,26,26,0.4)",
-          borderRadius: "8px",
-          color: "#F87171",
-          fontSize: "13px",
-        }}>
+        <p className="form-error" role="alert">
           {error}
-        </div>
+        </p>
       )}
-
-      <button
-        type="submit"
-        disabled={loading}
-        style={{
-          width: "100%",
-          padding: "12px",
-          background: loading ? "rgba(139,26,26,0.5)" : "#8B1A1A",
-          border: "1px solid rgba(201,168,76,0.3)",
-          borderRadius: "8px",
-          color: "#FAF6EE",
-          fontSize: "14px",
-          fontWeight: 600,
-          cursor: loading ? "not-allowed" : "pointer",
-          marginTop: "4px",
-          transition: "background 0.2s",
-        }}
-      >
-        {loading ? "Signing in…" : "Sign In"}
+      <button className="button" type="submit" disabled={pending}>
+        {pending ? 'Signing in…' : 'Sign in'}
+        <ArrowRight size={17} />
       </button>
     </form>
   );
 }
-
-export default function AdminLoginPage() {
+export default function LoginPage() {
   return (
-    <div style={{
-      minHeight: "100vh",
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "center",
-      background: "#080504",
-      padding: "24px",
-    }}>
-      <div style={{
-        width: "100%",
-        maxWidth: "400px",
-        background: "#0F0A04",
-        border: "1px solid rgba(201,168,76,0.2)",
-        borderRadius: "12px",
-        padding: "40px 32px",
-      }}>
-        {/* Logo */}
-        <div style={{ textAlign: "center", marginBottom: "32px" }}>
-          <div style={{
-            width: "56px", height: "56px",
-            background: "#8B1A1A",
-            border: "2px solid #C9A84C",
-            borderRadius: "12px",
-            display: "flex", alignItems: "center", justifyContent: "center",
-            fontSize: "24px", fontWeight: 700,
-            color: "#C9A84C",
-            margin: "0 auto 16px",
-            fontFamily: "Georgia, serif",
-          }}>R</div>
-          <h1 style={{ color: "#FAF6EE", fontSize: "20px", fontWeight: 600, margin: 0 }}>
-            RMCL Admin
-          </h1>
-          <p style={{ color: "rgba(250,246,238,0.4)", fontSize: "13px", marginTop: "6px" }}>
-            Sign in to manage your website
-          </p>
-        </div>
-
-        <Suspense fallback={null}>
+    <main className="admin-login">
+      <div className="admin-login-card">
+        <Brand />
+        <h1>A familiar place to manage things.</h1>
+        <p>Sign in to update the Mero Sahakari demo.</p>
+        <Suspense fallback={<p>Loading sign-in form…</p>}>
           <LoginForm />
         </Suspense>
-
-        <p style={{ textAlign: "center", marginTop: "24px", fontSize: "12px", color: "rgba(250,246,238,0.25)" }}>
-          Royal Multipurpose Cooperative Society Ltd.
-        </p>
+        <Link className="text-link" href="/">
+          <ArrowLeft size={16} />
+          Back to the website
+        </Link>
       </div>
-    </div>
+    </main>
   );
 }

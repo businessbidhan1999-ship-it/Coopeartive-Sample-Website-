@@ -1,36 +1,49 @@
-# Dependencies
+# Dependencies and generated output
 node_modules/
-
-# Next.js build
 .next/
 out/
+dist/
+coverage/
+*.tsbuildinfo
+next-env.d.ts
+*.log
 
-# Environment (contains secrets)
-.env.local
-.env.*.local
+# Secrets and writable runtime data
+.env
+.env.*
+!.env.example
+.aws/
+data/
+public/uploads/*
+!public/uploads/.gitkeep
+*.pem
+*.key
 
-# OS files
-.DS_Store
-Thumbs.db
+# Agent context, research, screenshots and working documents
+.agents/
+.codex/
+.claude/
+.openai/
+.impeccable/
+.impeccable.md
+.firecrawl/
+.playwright/
+playwright-report/
+test-results/
+output/
+tmp/
+docs/
+*.md
+!README.md
+!readme.md
 
-# IDE
+# Local tooling and operating-system files
 .vscode/
 .idea/
+.DS_Store
+Thumbs.db
 *.swp
 *.swo
 
-# TypeScript build info
-tsconfig.tsbuildinfo
-
-# Debug logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Uploaded files (user content, not source)
-public/uploads/*
-!public/uploads/.gitkeep
-
-# Submission data (runtime data, not source)
-data/submissions/*.json
-!data/submissions/.gitkeep
+# Local image-generation provenance sidecars
+*.webp.json

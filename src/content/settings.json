@@ -1,0 +1,23 @@
+{
+  "name": "Mero Sahakari",
+  "shortName": "Mero Sahakari",
+  "tagline": "Together, for a better tomorrow.",
+  "established": "Sample cooperative",
+  "contact": {
+    "address": "Kathmandu Valley, Nepal (illustrative location)",
+    "phones": [],
+    "fax": "",
+    "email": "hello@merosahakari.example",
+    "hours": {
+      "weekdays": "Sunday to Friday, 10:00 AM to 5:00 PM",
+      "saturday": "Saturday: closed"
+    }
+  },
+  "social": {
+    "facebook": ""
+  },
+  "stats": {
+    "members": 0,
+    "branches": 3
+  }
+}
